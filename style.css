@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#container {
+  height: 100%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+#container {
+  max-width: 1440px;
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 375px) {
+  #container {
+    max-width: 375px;
+  }
+}
+#container #page {
+  width: 860px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  margin: 100px 80px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  #container #page {
+    max-width: 375px;
+    display: block;
+    margin: 20px;
+  }
+}
+#container #page > div {
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 375px) {
+  #container #page > div {
+    width: 100%;
+    margin: 15px;
+    margin: 0;
+  }
+}
+/*i will be back to this point*/
+#container #page #image {
+  position: relative;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-position: bottom;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 375px) {
+  #container #page #image {
+    background-image: url("images/bg-pattern-mobile.svg");
+    height: 100px;
+
+    background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #container #page #image .desk {
+    display: none;
+  }
+}
+#container #page #image .mobile {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  #container #page #image .mobile {
+    display: block;
+    position: absolute;
+    top: -107px;
+    left: 19px;
+  }
+}
+#container #page #image img.woman {
+  width: 100%;
+  position: absolute;
+  top: -24px;
+  left: -49px;
+}
+#container #page #image img.box {
+  position: absolute;
+  top: 84px;
+  left: -100px;
+}
+#container #page #accordion {
+  padding: 40px;
+}
+#container #page #accordion h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+@media screen and (max-width: 375px) {
+  #container #page #accordion h1 {
+    text-align: center;
+  }
+}
+
+#container #page #accordion .items .item {
+  margin-bottom: 15px;
+  position: relative;
+}
+#container #page #accordion .items .item h3 {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(240, 6%, 50%);
+  cursor: pointer;
+}
+#container #page #accordion .items .item h3:hover {
+  color: hsl(14, 88%, 65%);
+}
+#container #page #accordion .items .item h3.blue {
+  color: hsl(238, 29%, 16%);
+}
+#container #page #accordion .items .item p {
+  margin-top: 15px;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: hsl(240, 6%, 50%);
+}
+#container #page #accordion .items .item button {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+.up {
+  transform: rotate(180deg);
+}
+
+.hide {
+  display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
