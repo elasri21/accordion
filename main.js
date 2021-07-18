@@ -1,10 +1,5 @@
 $(document).ready(function(){
-
-    let down = document.querySelectorAll('.down');
-let up = document.querySelectorAll('.up');
 let show = document.querySelectorAll('.item h3')
-let menu = document.querySelectorAll('.item p')
-
 show.forEach(btn => {
     btn.addEventListener('click', function(e){
         $('item h3').removeClass('blue')
@@ -20,8 +15,6 @@ show.forEach(btn => {
 })
 
 })
-
-// i will complet this task with jquery
 
 
 
